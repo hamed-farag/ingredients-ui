@@ -1,7 +1,7 @@
 .btn {
   @apply px-4 py-2 rounded bg-gray-200 text-black;
-}
 
-.btn--primary {
-  @apply bg-red-700;
+  &--primary {
+    @apply bg-red-700;
+  }
 }

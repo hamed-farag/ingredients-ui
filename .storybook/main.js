@@ -7,6 +7,14 @@ module.exports = {
     "@storybook/addon-interactions",
     "@storybook/addon-knobs",
     "@storybook/addon-postcss",
+    {
+      name: "storybook-addon-sass-postcss",
+      options: {
+        postcssLoaderOptions: {
+          implementation: require("postcss"),
+        },
+      },
+    },
   ],
   framework: "@storybook/react",
 };
