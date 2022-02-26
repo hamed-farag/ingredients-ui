@@ -29,11 +29,12 @@
     "start": "npm-run-all start:documentation",
     "start:documentation": "start-storybook -p 6006",
     "//": "//",
-    "build": "run-p build:css build:css:compress build:library",
+    "build": "run-p build:css build:library",
     "build:documentation": "build-storybook",
     "build:library": "rollup -c",
-    "build:css": "npx tailwindcss -i ./src/styles/globals.css -o ./lib/output.css",
-    "build:css:compress": "npx tailwindcss -i ./src/styles/globals.css -o ./lib/output.min.css -m"
+    "build:css": "run-p build:css:uncompressed build:css:compressed",
+    "build:css:uncompressed": "cross-env NODE_ENV=development npx postcss ./src/styles/globals.css -o ./lib/output.css",
+    "build:css:compressed": "cross-env NODE_ENV=production npx postcss ./src/styles/globals.css -o ./lib/output.min.css"
   },
   "peerDependencies": {
     "react": "^17.0.2",
@@ -56,8 +57,11 @@
     "@types/rollup-plugin-peer-deps-external": "^2.2.1",
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.3",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.0.17",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.7",
+    "postcss-cli": "^9.1.0",
     "postcss-import": "^14.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",

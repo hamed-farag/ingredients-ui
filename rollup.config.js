@@ -28,8 +28,6 @@ export default {
     resolve(),
     commonjs(),
     typescript(),
-    postcss({
-      extensions: [".css"],
-    }),
+    postcss(),
   ],
 };
