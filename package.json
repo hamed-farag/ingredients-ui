@@ -1,0 +1,75 @@
+{
+  "name": "ingredients-ui",
+  "version": "1.0.0",
+  "description": "The React UI library created for elmenus by elmenus.",
+  "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "types": "lib/index.d.ts",
+  "author": "frontend-team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamed-farag/ingredients-ui/issues"
+  },
+  "homepage": "https://github.com/hamed-farag/ingredients-ui#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamed-farag/ingredients-ui.git"
+  },
+  "keywords": [
+    "elmenus",
+    "react",
+    "reusable",
+    "library",
+    "components",
+    "ingredients"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "/": "/",
+    "start": "npm-run-all start:documentation",
+    "start:documentation": "start-storybook -p 6006",
+    "//": "//",
+    "build": "run-p build:css build:css:compress build:library",
+    "build:documentation": "build-storybook",
+    "build:library": "rollup -c",
+    "build:css": "npx tailwindcss -i ./src/styles/globals.css -o ./lib/output.css",
+    "build:css:compress": "npx tailwindcss -i ./src/styles/globals.css -o ./lib/output.min.css -m"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.17.5",
+    "@rollup/plugin-commonjs": "^21.0.2",
+    "@rollup/plugin-node-resolve": "^13.1.3",
+    "@rollup/plugin-typescript": "^8.3.1",
+    "@storybook/addon-actions": "^6.4.19",
+    "@storybook/addon-essentials": "^6.4.19",
+    "@storybook/addon-interactions": "^6.4.19",
+    "@storybook/addon-knobs": "^6.4.0",
+    "@storybook/addon-links": "^6.4.19",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/react": "^6.4.19",
+    "@storybook/testing-library": "^0.0.9",
+    "@types/react": "^17.0.39",
+    "@types/rollup-plugin-peer-deps-external": "^2.2.1",
+    "autoprefixer": "^10.4.2",
+    "babel-loader": "^8.2.3",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.7",
+    "postcss-import": "^14.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.68.0",
+    "rollup-plugin-dts": "^4.1.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^6.4.19",
+    "tailwindcss": "^3.0.23",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1"
+  }
+}
