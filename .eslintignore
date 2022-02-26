@@ -1,0 +1,9 @@
+/node_modules
+/storybook-static
+/dist
+/lib
+
+.eslintrc.js
+postcss.config.js
+rollup.config.js
+tailwind.config.js

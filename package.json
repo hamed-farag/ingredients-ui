@@ -15,14 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/hamed-farag/ingredients-ui.git"
   },
-  "keywords": [
-    "elmenus",
-    "react",
-    "reusable",
-    "library",
-    "components",
-    "ingredients"
-  ],
+  "keywords": ["elmenus", "react", "reusable", "library", "components", "ingredients"],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "/": "/",
@@ -34,7 +27,9 @@
     "build:library": "rollup -c",
     "build:css": "run-p build:css:uncompressed build:css:compressed",
     "build:css:uncompressed": "cross-env NODE_ENV=development npx postcss ./src/styles/globals.scss -o ./lib/output.css",
-    "build:css:compressed": "cross-env NODE_ENV=production npx postcss ./src/styles/globals.scss -o ./lib/output.min.css"
+    "build:css:compressed": "cross-env NODE_ENV=production npx postcss ./src/styles/globals.scss -o ./lib/output.min.css",
+    "///": "///",
+    "eslint": "npx eslint . --ext .js,.jsx,.ts,.tsx,.scss"
   },
   "peerDependencies": {
     "react": "^17.0.2",
@@ -55,15 +50,26 @@
     "@storybook/testing-library": "^0.0.9",
     "@types/react": "^17.0.39",
     "@types/rollup-plugin-peer-deps-external": "^2.2.1",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
     "autoprefixer": "^10.4.2",
     "babel-loader": "^8.2.3",
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.17",
+    "eslint": "^8.10.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.4.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-react": "^7.29.2",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.7",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.0.2",
     "postcss-nested": "^5.0.6",
+    "prettier": "2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rollup": "^2.68.0",

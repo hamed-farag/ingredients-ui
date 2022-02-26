@@ -1,17 +1,16 @@
-
 ### Based On
-- create-react-library (custom implementation)
-- tailwindCSS
-- storybook
+
+- create-react-library (custom implementation) (DONE)
+- tailwindCSS (DONE)
+- storybook (DONE)
+- classnames (DONE)
+- compress (Partially DONE)
+- eslint (DONE)
+- prettier (DONE)
 - react-testing-library
-- eslint
-- prettier
 - husky
 - git-cz
 - code coverage (run before pushing)
-- classnames
-- compress
-
 
 .
 Visual Testing
