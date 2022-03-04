@@ -5,6 +5,7 @@
     "module": "esnext",
     "outDir": "lib",
     "declaration": true,
+    "declarationDir": "types",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": false,
     "skipLibCheck": true,
