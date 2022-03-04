@@ -4,9 +4,8 @@
     "target": "es5",
     "module": "esnext",
     "outDir": "lib",
-    "lib": ["dom", "dom.iterable", "esnext"],
     "declaration": true,
-    "declarationDir": "lib",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -16,7 +15,7 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
+    "emitDeclarationOnly": true,
     "jsx": "react",
     "removeComments": true,
     "pretty": true,
@@ -37,6 +36,6 @@
     "noUnusedParameters": false,
     "stripInternal": true
   },
-  "include": ["src"],
+  "include": ["./src"],
   "exclude": ["node_modules", "lib", "dist", "storybook-static"]
 }

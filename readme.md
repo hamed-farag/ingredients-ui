@@ -7,6 +7,7 @@
 - compress (Partially DONE)
 - eslint (DONE)
 - prettier (DONE)
+- JEST
 - react-testing-library
 - husky
 - git-cz
